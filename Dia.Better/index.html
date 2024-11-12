@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\style.css">
+    <link rel="shortcut icon" href="img\logo.svg" type="image/x-icon">
+    <title>dIA.better</title>
+</head>
+<body>
+    <div id="width">
+        <img id="logo" src="img\logo.svg" alt="logo">
+        <header>
+            <img id="banner_img" src="img/banner.svg" alt="">
+        </header>
+        <h1 id="titulo">Previsão de Diabetes</h1>
+        <section id="body">
+            <div id="text">
+                <p>É uma doença causada pela produção insuficiente ou má absorção de insulina, hormônio que regula a glicose no sangue e garante energia para o organismo. <br> A insulina é um hormônio que tem a função de quebrar as moléculas de glicose(açúcar) transformando-a em energia para manutenção das células do nosso organismo.</p>
+                <strong>Descubra agora sua previsão!</strong>
+
+                <div class="warning-container">
+                    <h4>Aviso Importante</h4>
+                    <p>
+                      As informações fornecidas pela ferramenta de previsão de diabetes dIA.better têm como objetivo auxiliar na identificação de possíveis fatores de risco e orientar a busca por acompanhamento médico. No entanto, é importante lembrar que os resultados apresentados não são 100% precisos e não substituem uma avaliação profissional. Para um diagnóstico completo e um tratamento adequado, consulte sempre um médico especializado.
+                    </p>
+                  </div>
+            </div>
+            <img src="img\image.svg" alt="" id="image">
+            <div id="inputs">
+                <h1>Preencha os espaços abaixo e descubra </h1>
+                <div id="grid_input">
+                    <input id="input_idade" type="text" placeholder="Sua idade">
+                    <input id="input_genero" type="text" placeholder="Seu gênero">
+                    <input id="input_imc" type="text" placeholder="Seu IMC">
+                    <input id="input_hipertensao" type="text" placeholder="Sua hipertensão">
+                    <input id="input_fumante" type="text" placeholder="Seu histórico de fumante">
+                    <input id="input_coracao" type="text" placeholder="Problema de coração">
+                    <input id="input_glicose" type="text" placeholder="Seu nível de glicose">
+                    <input id="input_hba1c" type="text" placeholder="Seu hbA1c">
+                    <button id="botao_azul">Calcular</button>
+                    <button id="botao_vermelho">Limpar</button>
+                    <p id="resultado">Resultado: </p>
+                </div>
+            </div>
+            <div id="imc">
+                <a href="imc.html"><button id="botao_azul">Não sabe seu IMC? Descubra agora!</button></a>
+                <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro...</p>
+            </div>
+        </section>
+        <section id="body2">
+            <h1 id="titulo">Banco de dados - Previsão de diabetes</h1>
+            <div></div>
+            <div style="background-color: #D9D9D9; padding: 10px 20px;">
+                <p>O banco de dados utilizado neste website foi projetado para auxiliar na previsão do diabetes com base em indicadores-chave de saúde, como idade, sexo, índice de massa corporal (IMC), hipertensão, doença cardíaca, histórico de tabagismo, nível de HbA1c e nível de glicose no sangue.<br><br>
+                    Ele contém registros de dados do paciente e vários atributos que influenciam a probabilidade de desenvolver diabetes. Este Dataset será utilizado para construir modelos de aprendizado de máquina que podem prever a probabilidade de diabetes em pacientes com base em seu histórico médico e detalhes demográficos.<br><br>
+                    A previsão deste website é feita através de uma IA e foi utilizado um banco de dados fornecidos pela Kaggle, cujo tamanho possui 1000 linhas e 9 colunas.<br><br>
+                    O arquivo diabetes_prediction_dataset.csv contém dados médicos e demográficos de pacientes, juntamente com seu status de diabetes, seja positivo ou negativo.<br><br>
+                </p>
+            </div>
+            <div></div>
+        </section>
+        <section id="body2">
+            <div>
+                <h2>Sobre a Diabetes</h2>
+                <p>O diabetes tipo 1 ocorre em 5 a 10% dos casos, quando o sistema imunológico ataca as células produtoras de insulina, resultando em pouca ou nenhuma produção, o que aumenta os níveis de glicose no sangue. Já o diabetes tipo 2 é geralmente assintomático e se manifesta na vida adulta, especialmente após os 40 anos, com evolução lenta e risco de complicações. <br><br> <strong> >> Está associado a excesso de peso, sedentarismo, má alimentação e histórico familiar de diabetes.</strong> <br><br> A seguir, é possível observar dois gráficos. ambos mostram um aumento significativo à medida que os pacientes envelhecem. <br><br>Esse crescimento indica que a probabilidade de desenvolver diabetes e hipertensão se intensifica com o avanço da idade. A resistência à insulina e as mudanças metabólicas são fatores que contribuem para o aumento da diabetes, enquanto o endurecimento dos vasos sanguíneos e alterações na função cardíaca estão relacionados à hipertensão. <br><br>Além disso, é importante destacar que essas duas condições frequentemente coexistem, aumentando o risco de complicações cardiovasculares. Isso ressalta a necessidade de monitoramento constante e intervenções preventivas em populações mais velhas, como a adoção de estilos de vida saudáveis. </p>
+            </div>
+            <div></div>
+        </section>
+        <div id="flex">
+
+            <img id="grafico" src="img\grafico-1.svg" alt="">
+            <img id="grafico" src="img\grafico-2.svg" alt="">
+            
+        </div>
+        
+        <section id="body3">
+            <div>
+                <h2>Variável: smoking_history</h2>
+
+                <p>A variável smoking_history é usada para registrar o histórico de tabagismo dos usuários, sendo um fator relevante na análise de riscos relacionados à saúde. No entanto, identificamos que havia uma linha categorizada como “No info”, que representava dados faltantes ou não informados. Essa linha impactava a análise, prejudicando a precisão dos resultados ao introduzir incertezas nas inferências feitas a partir dos dados.</p>
+                <br>
+                <p>Para melhorar a qualidade da análise, essa linha foi ajustada ou removida de acordo com as melhores práticas de tratamento de dados faltantes, garantindo assim uma interpretação mais confiável das informações sobre o histórico de tabagismo dos usuários.</p> 
+            </div>
+        </section>
+        <div id="flex">
+            <img id="grafico" src="img\Variavel smoking_history ANTES.png" alt="">
+            <img id="grafico" src="img\Variavel smoking_history DEPOIS.png" alt="">
+        </div>
+        <div></div>
+    </div>
+    <footer>
+        <p>
+            @Copyright 
+        </p>
+        <p>
+            Banco de dados - <a href="https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset/data">https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset/data</a>
+        </p>
+    </footer>
+</body>
+</html>
