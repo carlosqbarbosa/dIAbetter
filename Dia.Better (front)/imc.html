@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\style.css">
+    <title>Calcule seu IMC</title>
+</head>
+<body>
+    <div id="width">
+        <a href="index.html"><img id="logo" src="img\logo.svg" alt="logo"></a>
+        <header>
+            <img id="banner_img" src="img/banner.svg" alt="">
+        </header>
+        <h1 id="titulo">Cálculo IMC</h1>
+        <section id="body">
+            <div id="text">
+                <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.<br><br>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevado ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+                <strong>Descubra agora seu IMC!</strong>
+                <p>Insira seu peso e a altura nos campos abaixo e compare com os índices da tabela.<span style="color: #A4A148;"> Importante: siga os exemplos e use pontos como separadores.</span></p>
+            </div>
+            <div id="tabela">
+                <h2 id="titulo_grid_tabela">Como interpretar IMC</h2>
+                <div id="tabela_imc">
+                    <p style="color: #1C8FE7;">IMC</p>
+                    <p style="color: #1C8FE7;">Classificação</p>
+                    <p style="color: #1C8FE7;">Grau de Obesidade</p>
+                    <p>Menor que 18,5</p>
+                    <p>Magreza</p>
+                    <p>0</p>
+                    <p>Entre 18,5 e 24,9</p>
+                    <p>Normal</p>
+                    <p>0</p>
+                    <p>Entre 25,0 e 29,9</p>
+                    <p>Sobrepeso</p>
+                    <p>I</p>
+                    <p>Entre 30,0 e 39,9</p>
+                    <p>Obesidade</p>
+                    <p>II</p>
+                    <p>Maior que 40,0</p>
+                    <p>Obesidade Grave</p>
+                    <p>III</p>
+                </div>
+            </div>
+            <div id="inputs">
+    
+                <div id="grid_input_imc">
+                    <div>
+                        <p style="color: #1C8FE7;">Altura (ex.: 1.70)</p>
+                        <input id="input_altura" type="text" placeholder="Sua altura">
+                    </div>
+                    <div>
+                        <p style="color: #1C8FE7;">Peso (ex.:69.2)</p>
+                        <input id="input_peso" type="text" placeholder="Seu peso">
+                    </div>
+                    
+                    <button id="botao_azul" style="width: 100%; margin-bottom: 15px; margin-top: 19px;">Calcular</button>
+                    <p id="resultado_imc">Seu IMC: </p>
+                    <button id="botao_vermelho" style="margin-bottom: 0px; margin-top: 15px;">Limpar</button>
+                </div>
+            </div>
+            <div></div>
+        </section>
+    </div>
+    <footer>
+        <p>
+            @Copyright 
+        </p>
+        <p>
+            Banco de dados - <a href="https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset/data">https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset/data</a>
+        </p>
+    </footer>
+</body>
+</html>
