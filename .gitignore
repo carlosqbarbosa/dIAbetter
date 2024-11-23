@@ -1,0 +1,6 @@
+# Ignorar arquivos de dados e modelos grandes
+*.csv
+*.pkl
+
+# Ignorar configurações locais do VS Code (se forem locais)
+.vscode/
